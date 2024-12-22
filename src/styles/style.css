@@ -366,6 +366,9 @@ footer {
   #home article .title {
     font-size: 2.3rem;
   }
+  #home article .second-title {
+    font-size: 1;
+  }
 }
 @media only screen and (max-width: 768px) {
   .hamburger-menu {
@@ -414,6 +417,7 @@ footer {
   #home {
     flex-direction: column-reverse;
     padding: 2rem;
+    margin-top: 2rem;
   }
   #home article .title {
     font-size: 1.8rem;
@@ -443,7 +447,7 @@ footer {
     padding: 2rem;
   }
   .about-body {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     flex-direction: column;
   }
   .about-body article {
