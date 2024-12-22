@@ -78,7 +78,7 @@ nav .nav-list ul li a:hover {
 /* Home Style */
 #home {
   background-color: var(--bgcolor);
-  margin-top: 50px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
