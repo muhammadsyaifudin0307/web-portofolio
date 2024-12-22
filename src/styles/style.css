@@ -414,7 +414,6 @@ footer {
   #home {
     flex-direction: column-reverse;
     padding: 2rem;
-    margin-top: 5.5rem;
   }
   #home article .title {
     font-size: 1.8rem;
