@@ -348,12 +348,26 @@ footer {
 }
 
 /* Responsive */
-@media only screen and (max-width: 600px) {
+@media (min-width: 769px) and (max-width: 968px) {
+  nav {
+    padding: 15px 3.9rem;
+  }
+  nav .logo {
+    font-size: 1.3rem;
+  }
+  nav .nav-list ul li a {
+    font-size: 0.8rem;
+  }
+  #home,
+  #about,
+  #skill,
+  #project {
+    padding: 3.9rem;
+  }
+  #home article .title {
+    font-size: 2.3rem;
+  }
 }
-
-@media only screen and (min-width: 600px) {
-}
-
 @media only screen and (max-width: 768px) {
   .hamburger-menu {
     display: block;
@@ -427,6 +441,9 @@ footer {
     align-items: center;
     justify-content: center;
   }
+  #about {
+    padding: 2rem;
+  }
   .about-body {
     margin-top: 2rem;
     flex-direction: column;
@@ -436,15 +453,43 @@ footer {
     margin-top: 2rem;
     max-width: 100%;
   }
+  #skill {
+    padding: 2rem;
+  }
   #skil .media-list ul {
     flex: 1 1 auto;
     max-width: none;
   }
   #skill .media-list ul li svg {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
+  }
+  #project {
+    padding: 2rem;
   }
   #project .this-card {
     flex-direction: column;
+  }
+  footer {
+    font-size: 14px;
+  }
+}
+#home,
+#about,
+#skill,
+#project {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
