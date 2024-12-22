@@ -265,13 +265,12 @@ article .media-social ul li a i:hover {
   text-align: center;
 }
 
-/* Contact Style */
-#contact {
-  height: 100vh;
+/* Project Style */
+#project {
   padding: 5rem;
 }
-#contact .title {
-  text-decoration: underline 4px solid var(--btn-color);
+#project .title {
+  margin-bottom: 50px;
   color: var(--textcolor-first);
   font-family: "Poppins", sans-serif;
   font-weight: 800;
@@ -279,31 +278,66 @@ article .media-social ul li a i:hover {
   text-align: center;
   font-size: 2rem;
 }
-
-#contact form {
+#project .this-card {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
-  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
-#contact form label {
+.this-card .card {
+  border: 2px solid var(--btn-color);
+  border-radius: 16px;
+  padding: 14px;
+  width: 100%;
+  height: 350px auto;
+}
+.this-card .card .images-card {
+  border: 2px solid var(--btn-color);
+  border-radius: 14px;
+  width: 100%;
+  height: 150px;
+}
+
+.this-card .card header {
+  position: unset;
+  background-color: initial;
+  border-bottom: none;
+  margin-bottom: 10px;
+}
+.this-card .card .header-card .title-card {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-family: "Poppins", serif;
+  font-size: 1.2rem;
   color: var(--textcolor-first);
 }
+.this-card .card .content p {
+  color: var(--textcolor-desc);
+  font-family: "Roboto", serif;
+  line-height: 1.6;
+}
+.this-card .card footer {
+  border-top: none;
+}
+.this-card .card footer a {
+  text-decoration: none;
+}
 
-#contact form input {
-  border: 2px solid red;
-  border-radius: 4px;
+.this-card .card footer a button {
+  border: none;
+  border-radius: 30px;
+  background-color: var(--btn-color);
+  padding: 0.5rem 0.8rem;
+  width: 100px;
+  cursor: pointer;
+  text-align: center;
+  color: var(--textcolor-second);
+  font-weight: 800;
+  font-family: "Poppins", serif;
+  transition: backgorund-color 0.3s ease;
 }
-#contact form textarea {
-  height: 100px;
-  padding: 10px;
-  border-radius: 5px;
-}
-#contact form button {
-  width: 50%;
-  height: 30px;
-  border-radius: 5px;
-  margin-top: 12px;
+.this-card .card footer a button:hover {
+  background-color: var(--btn-hover);
 }
 /* Footer Style */
 footer {
@@ -409,5 +443,8 @@ footer {
   #skill .media-list ul li svg {
     width: 60px;
     height: 60px;
+  }
+  #project .this-card {
+    flex-direction: column;
   }
 }
