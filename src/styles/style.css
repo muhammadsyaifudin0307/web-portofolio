@@ -78,7 +78,7 @@ nav .nav-list ul li a:hover {
 /* Home Style */
 #home {
   background-color: var(--bgcolor);
-  height: 100vh;
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -197,18 +197,16 @@ article .media-social ul li a i:hover {
   padding: 5rem;
 }
 #about .title {
-  text-decoration: underline 4px solid var(--btn-color);
   color: var(--textcolor-first);
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 50px;
 }
 
 .about-body {
-  margin-top: -80px;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -251,7 +249,7 @@ article .media-social ul li a i:hover {
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 #skill .media-list ul {
   display: flex;
@@ -276,13 +274,13 @@ article .media-social ul li a i:hover {
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 #project .this-card {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
 }
 .this-card .card {
   border: 2px solid var(--btn-color);
@@ -341,6 +339,7 @@ article .media-social ul li a i:hover {
 }
 /* Footer Style */
 footer {
+  font-family: "Poppins", serif;
   border-top: 1px solid var(--textcolor-first);
   padding: 1rem;
   text-align: center;
@@ -350,7 +349,7 @@ footer {
 /* Responsive */
 @media (min-width: 769px) and (max-width: 968px) {
   nav {
-    padding: 15px 3.9rem;
+    padding: 15px 3.5rem;
   }
   nav .logo {
     font-size: 1.3rem;
@@ -362,7 +361,7 @@ footer {
   #about,
   #skill,
   #project {
-    padding: 3.9rem;
+    padding: 3.5rem;
   }
   #home article .title {
     font-size: 2.3rem;
@@ -418,7 +417,7 @@ footer {
     margin-top: 5.5rem;
   }
   #home article .title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   #home article .second-title {
     font-size: 1rem;
