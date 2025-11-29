@@ -1,8 +1,22 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
+import About from "./pages/About";
+import TechStack from "./pages/TechStack";
+import Project from "./pages/Project";
+import Layout from "./component/Layout";
+
 function App() {
   return (
-    <>
-      <div className="bg-amber-100">halloo</div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/tech-stack" element={<TechStack />} />
+          <Route path="/project" element={<Project />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
