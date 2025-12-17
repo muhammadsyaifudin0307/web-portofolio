@@ -1,15 +1,15 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "../component/Navbar";
 import { Outlet } from "react-router-dom";
-const Layout = () => {
+const MainLayout = () => {
   return (
     <div>
       <Navbar />
-      <main>
+      <main className="h-screen bg-zinc-950">
         <Outlet />
       </main>
     </div>
   );
 };
 
-export default Layout;
+export default MainLayout;
