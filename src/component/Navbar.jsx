@@ -7,7 +7,7 @@ const Navbar = () => {
   const NavItems = [
     {
       name: "Home",
-      id: "/",
+      id: "hero",
     },
     {
       name: "About",
@@ -39,13 +39,12 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-10">
           {NavItems.map((item) => (
             <Link
-              membuat
-              scroll
-              l
               key={item.name}
               to={item.id}
               spy={true}
               smooth={true}
+              duration={500}
+              activeClass=""
               className="relative text-sm font-semibold tracking-wide text-zinc-400 hover:text-white transition-colors duration-300 group">
               {item.name}
               <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>

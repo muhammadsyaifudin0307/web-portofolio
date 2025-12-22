@@ -6,35 +6,17 @@ import MainLayout from "./layouts/MainLayout";
 import ProjectList from "./pages/projects/ProjectList";
 import ProjectDetail from "./pages/projects/ProjectDetail";
 import NotFound from "./pages/NotFound";
-
+import BackgroundLayout from "./layouts/BackgroundLayout";
+import Layout from "./layouts/Layout";
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<MainLayout />}>
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="tech-stack" element={<TechStack />} />
-
-        <Route path="project" element={<ProjectList />} />
-        <Route path="project/:slug" element={<ProjectDetail />} />
-
-        {/* INI YANG MENANGKAP SEMUA YANG GAGAL */}
-        <Route path="*" element={<NotFound />} />
-      </Route>
-    </Routes>
-
-    // <Routes>
-    //   <Route path="/" element={<MainLayout />}>
-    //     <Route index element={<Home />} />
-    //     <Route path="about" element={<About />} />
-    //     <Route path="tech-stack" element={<TechStack />} />
-    //     {/* Project Page */}
-    //     <Route path="project" element={<ProjectList />} />
-    //     <Route path="project/:slug" element={<ProjectDetail />} />
-    //     {/* NotFound Page */}
-    //     <Route path="*" element={<NotFound />} />
-    //   </Route>
-    // </Routes>
+    <BackgroundLayout>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route index element={<MainLayout />} />
+        </Route>
+      </Routes>
+    </BackgroundLayout>
   );
 }
 
